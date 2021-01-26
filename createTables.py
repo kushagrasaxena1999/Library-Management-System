@@ -1,8 +1,11 @@
 import pymysql
+# from django.db import connection
+
+myConnection = connection.cursor()
 
 hostname = 'localhost'
 username = 'root'
-password = '1234'
+password = ''
 database = 'library'
 
 myConnection = pymysql.connect( host=hostname, user=username, passwd=password, db=database)
